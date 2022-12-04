@@ -1,0 +1,621 @@
+:root {
+    --yellow: #F5FF7D;
+    --black: #000;
+    --background-color-table-plus-checkbox: #151515;
+
+    --white: #fff;
+    --header-color: rgb(244, 244, 244);
+    --researches: #F4F4F4;
+    --silver: #D9D9D9;
+    --about-text-gray: #4D4D4D;
+
+    --plus-white: url(Matte-img/Icons/Icons-simple/i_plus-white.png);
+    --checkbox-white: url(Matte-img/Icons/Icons-simple/i_aprv-white.png);
+
+    --plus-black: url(Matte-img/Icons/Icons-simple/i_plus-black.png);
+    --checkbox-black: url(Matte-img/Icons/Icons-simple/i_aprv_black.png);
+}
+
+@font-face {
+    font-family: 'PP Rader';
+    src: url(Matte-fonts/PPRader-fonts/PPRader-Regular.otf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'PP Rader';
+    src: url(Matte-fonts/PPRader-fonts/PPRader-Bold.otf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Gilfory';
+    src: url(Matte-fonts/Gilroy-fonts/Gilroy-Light.otf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Gilfory';
+    src: url(Matte-fonts/Gilroy-fonts/Gilroy-ExtraBold.otf);
+    font-weight: bold;
+}
+
+
+.font-style-headers-small {
+    font: bold 14px/21px 'PP Rader', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 4px;
+}
+
+
+
+.h1-PPrader {
+    font: 400 40px/40px 'PP Rader', sans-serif;
+    text-transform: uppercase;
+}
+
+.container-button {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.button-register-and-join-fonts {
+    font: 400 22px/1.2 'Gilfory', sans-serif;
+    text-decoration: none;
+    background-repeat: no-repeat;
+}
+
+.white {
+    color: var(--white);
+}
+.border-top-left-radius-40 {
+    border-top-left-radius: 40px;
+}
+
+.border-bottom-left-radius-40 {
+    border-bottom-left-radius: 40px;
+}
+
+.border-top-right-radius-40 {
+    border-top-right-radius: 40px;
+}
+
+.border-bottom-right-radius-40 {
+    border-bottom-right-radius: 40px;
+}
+
+
+
+
+body {
+    margin: 0;
+
+    min-width: 360px;
+    width: 100%;
+    
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 12px 0;
+
+    background: var(--header-color);
+
+    overflow: hidden;
+}
+
+.burger {
+    box-sizing: border-box;
+    width: 44px;
+    height: 44px;
+    padding: 9px;
+    
+    border: 1px solid #000;
+    border-radius: 22px;
+
+    background-color: var(--yellow);
+}
+
+h1 {
+    margin: 0;
+}
+
+.h1-header {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font: 400 40px/40px 'PP Rader', sans-serif;
+    text-transform: uppercase;
+    
+    margin: 20px 0 35px;
+}
+
+
+.register-button-header {
+    
+    padding: 14px 60px 15px 28px;
+    background-image: url("Matte-img/UI-Elements/Buttons/Button_green_small3.svg");
+}
+
+
+.illustration-girl {
+    background-image: url("Matte-img/Illustrations/Personage/pose1_small.svg");
+    background-repeat: no-repeat;
+
+    height: 328px;
+    width: 320px;
+
+    margin-top: -90px;
+    margin-left: 70px;
+
+    position: relative;
+    z-index: 200;
+}
+
+main {
+    background-color: var(--header-color);    
+}
+
+
+.course-1 {
+    position: relative;
+    z-index: 100;
+
+    
+    display: flex;
+    flex-direction: column;
+    
+    background-color: var(--black);
+
+    box-sizing: border-box;
+    border-radius: 40px;
+    
+    margin-top: -40px;
+    padding-bottom: 40px;
+}
+
+.vector {
+    align-self: center;
+}
+
+.course-1 > h2 {
+    color: var(--white);
+    font: 400 32px/40px 'PP Rader', sans-serif;
+    text-transform: uppercase;
+
+    margin: 0 12px 28px;
+}
+
+.course-2 {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 20px;
+    background-color: var(--yellow);
+
+    padding: 0 12px;
+    margin: 0 12px;
+}
+
+.course-2 p {
+    font: 500 19px/32px 'Gilfory', sans-serif;
+    
+    margin: 20px 0 52px;
+}
+
+.workload {
+    display: flex;
+
+    border-top: 1px solid #000;
+}
+
+.workload > div {
+    align-self: center;
+
+    padding-top: 32px;
+    margin-bottom: 24px;
+}
+
+.workload-number {
+    font: bold 52px/32px 'Gilfory', sans-serif;
+    padding-bottom: 16px;
+}
+
+.workload-description {
+    font: 400 19px/32px 'Gilfory', sans-serif;
+}
+
+.program {
+    border-radius: 40px;
+
+    margin-top: 25px;
+    padding: 40px 12px 40px;
+    
+    background-color: var(--silver);
+}
+
+
+.program-illustration {
+    width: 100%;
+    height: 409px;
+
+    background-image: url("Matte-img/Illustrations/Elements/elem1_small.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 35px 0 50px;
+}
+
+.program-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.program-links div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 1px solid #000;    
+}
+
+.program-links div:last-of-type {
+    border-bottom: 1px solid #000;
+    
+}
+
+.program-links a {
+    margin: 16px 0;
+    
+    flex: 0.6 1 50%;
+    
+    font: 400 20px/23.5px 'Gilfory', sans-serif;
+    color: var(--black);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+.program-links div:hover,
+.program-links img:hover {
+    opacity: .7;
+    text-decoration: underline;
+}
+
+
+.about p {
+    font: 400 36px/40px "PP Rader", sans-serif;
+    text-transform: uppercase;
+    color: var(--white);
+
+    margin: 32px 12px 42px;
+
+}
+
+.about p span {
+    color: var(--about-text-gray);
+}
+
+
+.regiser-button-about {
+    background-image: url(Matte-img/UI-Elements/Buttons/Button_green_small.svg);
+
+    display: flex;
+    align-items: center;
+
+    width: 336px;
+    height: 54px;
+
+    box-sizing: border-box;
+    padding-left: 100px;
+}
+
+
+.tools-and-pricing {
+    margin-top: -40px;
+
+    background-color: var(--black);
+
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+    position: relative;
+    z-index: 15;
+
+}
+
+.tools {
+    padding: 75px 12px 40px;
+
+
+    background-color: var(--silver);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+}
+
+.personage2-desktop {
+    display: none;
+}
+
+.tools-header h1 {
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+
+.tools-profession {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    border: 1px solid #000;
+    border-radius: 40px;
+
+    margin-top: -40px;
+}
+
+.tools-profession h4 {
+    font: 400 28px/41.5px 'PP Rader', sans-serif;
+    letter-spacing: -0.4px;
+    margin: 0;
+}
+
+.tools-profession p {
+    font: 400 18px/24px "Gilfory", sans-serif;
+    margin: 0;
+}
+
+.tools-profession div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 300px;
+    height: 300px;
+
+    box-sizing: border-box;
+    padding: 20px 26px 20px 28px;
+
+    border-bottom: 1px solid #000;
+
+}
+
+#front-end {
+    background: var(--black);
+    color: var(--white);
+}
+#researches {
+    background-color: var(--researches);
+    border-bottom: none;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.container-pricing {
+    padding: 30px 12px 60px;
+
+}
+
+
+/* таблица */
+
+
+.pricing-table {
+    width: 100%;
+    margin: 40px 0 24px;
+    
+    border-collapse: collapse;
+}
+
+.table-head th {
+    padding-bottom: 17px;
+    
+}
+
+.plus {
+    background-image: var(--plus-white);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.checkbox {
+    background-image: var(--checkbox-white);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.pricing-table tbody td:first-child {
+    width: 45%;
+
+    font: 400 20px/28px 'PP Rader', sans-serif;
+    letter-spacing: -0.4px;
+    color: black;
+    
+    background-color: var(--white);
+
+    box-sizing: border-box;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    
+    padding: 10px 0 10px 23px;
+}
+
+.pricing-table tbody td:nth-of-type(1n + 2) {
+    width: calc(55% / 4);
+}
+
+/* border */
+
+.pricing-table tbody td:nth-of-type(1n + 2) {
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    
+}
+
+.pricing-table tbody {
+    border-radius: 40px;
+    box-shadow: 0 0 1px #fff;
+}
+
+
+
+.pricing-table tbody tr:hover td:first-child,
+.pricing-table tbody tr:hover {
+    background-color: var(--yellow);
+
+    --plus-white: var(--plus-black);
+    --checkbox-white: var(--checkbox-black);
+}
+
+.button-join-get-started:hover,
+.button-pricing-join:hover,
+.regiser-button-about:hover,
+.register-button-header:hover,
+
+.button-join-get-started:focus,
+.button-pricing-join:focus,
+.regiser-button-about:focus,
+.register-button-header:focus {
+    opacity: 0.8;
+}
+
+.button-pricing-join {
+    width: 330px;
+    height: 52px;
+
+    background-image: url(Matte-img/UI-Elements/Buttons/Button_green_small2.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.get-started-container {
+    z-index: 10;
+
+    background-color: var(--yellow);
+    border-radius: 40px;
+
+    margin-top: -30px;
+    padding: 70px 12px 80px;
+}
+
+.get-started-header {
+    width: 60%;
+
+    margin-bottom: 32px;
+}
+
+.desktop-vertical-black-sticks {
+    display: none;
+}
+
+.form {
+    margin: 45px 0 40px;
+
+}
+.form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    font: 400 12px/28px 'Gilfory', sans-serif;
+    opacity: 0.5;
+    
+    height: 26px;
+    
+}
+
+.form input {
+    font: 400 18px/24px "Gilfory", sans-serif;
+    height: 41px;
+    background-color: var(--yellow);
+    
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
+.form input:first-of-type {
+    margin-bottom: 30px;
+    
+}
+
+.button-join-get-started {
+    background-image: url(Matte-img/UI-Elements/Buttons/Button_black.svg);
+    color: var(--white);
+
+    border: none;
+    border-radius: 40px;
+
+    width: 336px;
+    height: 52px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer {
+    z-index: 15;
+
+    background-color: #000;
+
+    margin-top: -40px;
+    padding: 24px 0 28px;
+
+    border-radius: 40px 40px 0 0;
+}
+
+.logo   {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social a {
+    border: 1px dashed #fff;
+}
+
+.copyrights {
+    display: flex;
+    justify-content: center;
+    margin: 28px 31px;
+}
+
+.copyrights span {
+    font: 400 18px/24px "Gilfory", sans-serif;
+    color: #fff;
+
+    text-align: center;
+}
+
+.white-stick {
+    border: 1px solid #fff;
+    margin: 0 25px;
+    opacity: .7;
+}
+
+
+.footer-duplicate-links {
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-duplicate-links h4 {
+    font: bold 20px/28px "Gilfoty", sans-serif;
+    margin: 20px 0 20px;
+}
+
+.footer-duplicate-links a {
+    font: 400 18px/24px "Gilfory", sans-serif;
+    margin-bottom: 14px;
+
+}
+

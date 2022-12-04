@@ -1,0 +1,107 @@
+.illustration-girl {
+    background-image: url("Matte-img/Illustrations/Personage/pose1_big.svg");
+    filter: brightness(0);
+
+    height: 592px;
+    width: 606px;
+    margin: 0;
+    display: block;
+}
+
+
+
+.tools {
+    padding: 100px 64px 76px 24px;
+}
+
+
+.tools-header {
+    margin-left: 40px;
+}
+
+.tools-header h1 {
+    margin: 12px 0 52px 0;
+    width: 80%;
+}
+
+.personage2-mobile {
+    display: none;
+}
+
+.personage2-desktop {
+    display: inline;
+    float: left;
+}
+
+.tools-profession {
+    display: block;
+    border: none;
+
+    margin: 0;
+}
+
+.tools-profession-desktop-top {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.tools-profession-desktop-bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+
+}
+
+.tools-profession div > div {
+    flex: 0 0 300px;
+
+    border: 1px solid #000;
+}
+
+.general {
+    border-radius: 40px 0 0 0;
+    border-bottom: none;
+}
+.analytics {
+    border-radius: 0 40px 0 0;
+}
+#front-end {
+    border-radius: 0 0 40px 0;
+}
+
+#researches {
+    border-bottom: 1px solid #000;
+    border-radius: 40px 0 0 40px;
+}
+
+
+.white-stick {
+    display: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 24px 119px 61px 44px;
+}
+
+
+.logo {
+    justify-content: flex-start;
+    margin: 32px 0 45px 20px;
+}
+
+.copyrights {
+    margin: 40px 0 0 20px;
+}
+
+.footer-duplicate-links {
+    align-items: flex-start;
+
+    height: 210px;
+
+    padding-left: 32px;    
+    border-left: 1px solid #fff ;
+}
