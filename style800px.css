@@ -1,10 +1,6 @@
-body {
-    max-width: 1440px;
-    margin: auto;
-}
 
 header {
-    padding: 12px 24px 0;
+    padding: 12px 0 24px 0;
 }
 
 .nav-menu img {
@@ -33,12 +29,12 @@ header {
 }
 
 
-.container-header {
+.content-header {
     display: flex;
     justify-content: space-between;
 }
 
-.container-header :first-child {
+.content-header :first-child {
     flex: 1 0 auto;
 }
 

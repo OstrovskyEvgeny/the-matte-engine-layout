@@ -4,7 +4,7 @@
     --background-color-table-plus-checkbox: #151515;
 
     --white: #fff;
-    --header-color: rgb(244, 244, 244);
+    --gray: rgb(244, 244, 244);
     --researches: #F4F4F4;
     --silver: #D9D9D9;
     --about-text-gray: #4D4D4D;
@@ -67,6 +67,7 @@
 .white {
     color: var(--white);
 }
+
 .border-top-left-radius-40 {
     border-top-left-radius: 40px;
 }
@@ -83,7 +84,30 @@
     border-bottom-right-radius: 40px;
 }
 
+.max-width {
+    max-width: 1440px;
+    margin: auto;
+}
 
+.bg-color-1 {
+    background-color: var(--gray);
+    width: 100%;
+}
+
+.bg-color-2 {
+    background-color: var(--black);
+    width: 100%;
+}
+
+.bg-color-3 {
+    background-color: var(--silver);
+    width: 100%;
+}
+
+.bg-color-4 {
+    background-color: var(--yellow);
+    width: 100%;
+}
 
 
 body {
@@ -98,8 +122,6 @@ header {
     display: flex;
     flex-direction: column;
     padding: 12px 12px 0;
-
-    background: var(--header-color);
 
     overflow: hidden;
 }
@@ -151,7 +173,7 @@ h1 {
 }
 
 main {
-    background-color: var(--header-color);    
+    background-color: var(--gray);    
 }
 
 
@@ -163,10 +185,7 @@ main {
     display: flex;
     flex-direction: column;
     
-    background-color: var(--black);
-
     box-sizing: border-box;
-    border-radius: 40px;
     
     margin-top: -40px;
     padding-bottom: 40px;
@@ -308,17 +327,11 @@ main {
 }
 
 
-.tools-and-pricing {
+.tools-container {
     margin-top: -40px;
-
-    background-color: var(--black);
-
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
 
     position: relative;
     z-index: 15;
-
 }
 
 .tools {
@@ -328,7 +341,8 @@ main {
     background-color: var(--silver);
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
-
+    border-radius: 0 40px;
+    
 }
 
 .personage2-desktop {
@@ -490,7 +504,6 @@ main {
 .get-started-container {
     z-index: 10;
 
-    background-color: var(--yellow);
     border-radius: 40px;
 
     margin-top: -30px;
@@ -556,8 +569,6 @@ main {
 
 footer {
     z-index: 15;
-
-    background-color: #000;
 
     margin-top: -40px;
     padding: 24px 0 28px;
