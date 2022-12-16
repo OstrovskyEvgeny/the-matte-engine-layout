@@ -15,6 +15,7 @@ header {
 .black-circle-nav {
     width: 44px;
     height: 44px;
+    margin: 0 24px 0;
 
     background-color: black;
     border-radius: 22px;
@@ -223,7 +224,7 @@ header {
 }
 
 .container-pricing {
-    padding: 65px 63px 80px;
+    padding: 100px 63px 80px;
 
 }
 
