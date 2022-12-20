@@ -47,8 +47,8 @@
 
 
 
-.h1-PPrader {
-    font: 400 40px/40px 'PP Rader', sans-serif;
+.h1-like {
+    font: 400 40px/1 'PP Rader', sans-serif;
     text-transform: uppercase;
 }
 
@@ -102,6 +102,10 @@
     position: relative;
 }
 
+.z-index-25 {
+    z-index: 25;
+}
+
 .z-index-20 {
     z-index: 20
 }
@@ -150,10 +154,10 @@ body {
     min-width: 360px;    
 }
 
-header {
+.header-container {
     display: flex;
     flex-direction: column;
-    padding: 12px 12px 0;
+    padding: 12px 12px min(62vw, 260px);
 
     overflow: hidden;
 }
@@ -174,10 +178,14 @@ h1 {
     margin: 0;
 }
 
-.h1-header {
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font: 400 40px/40px 'PP Rader', sans-serif;
+.main-headline {
+    font-family: 'PP Rader', sans-serif;
+    font-weight: 400;
+    font-size: min(11vw, 60px);
+    line-height: 1;
+    
     text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     
     margin: 20px 0 35px;
 }
@@ -190,24 +198,17 @@ h1 {
 }
 
 
-.illustration-girl {
-    background-image: url("Matte-img/Illustrations/Personage/pose1_small.svg");
-    background-repeat: no-repeat;
+.personage-1-mobile {
+    position: absolute;
+    top: 180px;
+    right: -45px;
 
-    height: 328px;
-    width: 320px;
-
-    margin-top: -90px;
-    margin-left: 70px;
-
-    position: relative;
-    z-index: 200;
+    width: min(430px, 90vw);
 }
 
-main {
-    background-color: var(--gray);    
+.personage-1-desktop {
+    display: none;
 }
-
 
 .course-1 {
     display: flex;
@@ -280,13 +281,14 @@ main {
 }
 
 
-.program-illustration {
+.elem-1-desktop {
+    display: none;
+}
+
+.elem-1-mobile {
     width: 100%;
     height: 409px;
 
-    background-image: url("Matte-img/Illustrations/Elements/elem1_small.svg");
-    background-repeat: no-repeat;
-    background-position: center;
     margin: 35px 0 50px;
 }
 
@@ -324,6 +326,7 @@ main {
 .program-links img:hover {
     opacity: .7;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 
@@ -365,7 +368,12 @@ main {
     background-color: var(--silver);    
 }
 
-.personage2-desktop {
+.personage-2-mobile {
+    display: block;
+    margin: auto;
+}
+
+.personage-2-desktop {
     display: none;
 }
 
@@ -538,7 +546,8 @@ main {
     margin-bottom: 32px;
 }
 
-.desktop-vertical-black-sticks {
+
+.elem-2-desktop {
     display: none;
 }
 

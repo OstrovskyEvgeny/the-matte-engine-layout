@@ -1,4 +1,4 @@
-.illustration-girl {
+/* .personage-1-mobile {
     background-image: url("Matte-img/Illustrations/Personage/pose1_big.svg");
     filter: brightness(0);
 
@@ -6,7 +6,7 @@
     width: 606px;
     margin: 0;
     display: block;
-}
+} */
 
 
 
@@ -24,11 +24,11 @@
     width: 80%;
 }
 
-.personage2-mobile {
+.personage-2-mobile {
     display: none;
 }
 
-.personage2-desktop {
+.personage-2-desktop {
     display: inline;
     float: left;
 }

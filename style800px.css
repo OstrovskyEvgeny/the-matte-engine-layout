@@ -1,8 +1,4 @@
 
-header {
-    padding: 12px 0 24px 0;
-}
-
 .nav-menu img {
     display: none;
 }
@@ -15,7 +11,6 @@ header {
 .black-circle-nav {
     width: 44px;
     height: 44px;
-    margin: 0 24px 0;
 
     background-color: black;
     border-radius: 22px;
@@ -29,47 +24,45 @@ header {
     background-color: black;
 }
 
-
-.content-header {
-    display: flex;
-    justify-content: space-between;
+.header-container {
+    padding: 12px 24px 9vw;
 }
 
-.content-header :first-child {
-    flex: 1 0 auto;
-}
-
-.h1-header {
-    font: 400 96px/90px "PP Rader", sans-serif;
-    font-size: 96px;
-    line-height: 90px;
-
+.header-container > h1 {
+    margin: 5.5vw 0 2.9vw 2.7vw;
     text-shadow: none;
-
-    margin: 80px 0 40px 40px;
 }
 
-.register-button-header {
-    background-image: none;
-    background-color: black;
-    border-radius: 30px;
-
-    color: black;
-
-    margin-left: 40px;
+.h1-like {
+    font-size: 60px;
 }
 
 
-.illustration-girl {
-    display: none;    
+.main-headline-desktop {
+    font-size: min(96px, 7.8vw);
+    line-height: 0.94;
 }
 
+.personage-1-mobile {
+    display: none;
+}
+
+.personage-1-desktop {
+    display: block;
+
+    position: absolute;
+    top: 60px;
+    right: 0;
+
+    width: min(600px, 47vw);
+
+    filter: brightness(0);
+}
 
 .course-1 > h2 {
     font-size: 40px;
 
-    margin: 0 64px 40px;
-
+    margin: 0 0 28px 64px;    
 }
 
 .course-2 {
@@ -79,15 +72,15 @@ header {
 
 .course-2 p {
     margin: 50px 20px 90px 0;
-
+    
 }
 
 .points-square {
     background-image: url("Matte-img/Illustrations/Elements/elem3_big.svg");
-    /* background-size: cover; */
     background-repeat: space round;
-    flex: 1 1 600px;
     margin: 76px 0 80px;
+
+    width: 50%;
 }
 
 
@@ -100,13 +93,6 @@ header {
     width: 50%;
 
     margin: 75px 0 40px 28px;
-}
-
-.course-2-information-container h1 {
-    font-size: 96px;
-    line-height: 90px;
-
-
 }
 
 
@@ -149,35 +135,29 @@ header {
     align-items: center;
 
     margin-top: 36px;
-    padding: 59px 64px;
-}
+    padding-left: min(5vw, 64px);
+    padding-right: min(5vw, 64px);
+    padding-top: min(4.5vw, 59px);
+    padding-bottom: min(4.5vw, 59px);
 
-.program-information {
-    flex: 1 1 752px;
 }
-
-.h1-PPrader {
-    font-size: 60px;
-    line-height: 60px;
-}
-
 
 .program-header {
     margin-bottom: 66px;
 }
 
 
-.program-illustration {    
+.elem-1-mobile {    
     display: none;
 }
 
-.program-illustration-big {
-    background-image: url("Matte-img/Illustrations/Elements/elem1_big.svg");
-    width: 460px;
+.elem-1-desktop {
+    display: block;
+
+    width: min(40vw, 400px);
     height: 560px;
 
-    margin-right: 100px;
-
+    margin-right: min(100px, 7vw);
 }
 
 
@@ -229,13 +209,13 @@ header {
 }
 
 
-.mobile-vertical-black-sticks {
+.elem-2-mobile {
     display: none;
 }
 
-.desktop-vertical-black-sticks {
+.elem-2-desktop {
     display: block;
-    margin-left: 7%;
+    margin-left: 86px;
 }
 
 .get-started-header {
