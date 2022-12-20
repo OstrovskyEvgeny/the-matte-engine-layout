@@ -52,16 +52,40 @@
     text-transform: uppercase;
 }
 
-.container-button {
-    display: flex;
-    justify-content: center;
+/* buttons */
+
+
+.button-common {
+    font: 400 22px/1.2 'Gilfory', sans-serif;
+    border: 1px solid #000;
+    border-radius: 27px;
     
+    padding: 0;
+
 }
 
-.button-register-and-join-fonts {
-    font: 400 22px/1.2 'Gilfory', sans-serif;
-    text-decoration: none;
-    background-repeat: no-repeat;
+.button-common:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.button-mobile {
+    width: 336px;
+    height: 52px;
+    
+    margin: auto;
+    display: block;
+}
+
+.button-common img {
+    position: relative;
+    top: 5px;
+    margin-left: 9px;
+}
+
+.header-container .button-common {
+    width: 167px;
+    height: 54px;
 }
 
 .white {
@@ -129,24 +153,23 @@
 
 .bg-color-1 {
     background-color: var(--gray);
-    width: 100%;
 }
 
 .bg-color-2 {
     background-color: var(--black);
-    width: 100%;
 }
 
 .bg-color-3 {
     background-color: var(--silver);
-    width: 100%;
 }
 
 .bg-color-4 {
     background-color: var(--yellow);
-    width: 100%;
 }
 
+.width-100 {
+    width: 100%;
+}
 
 body {
     margin: 0;
@@ -192,13 +215,6 @@ h1 {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     
     margin: 20px 0 35px;
-}
-
-
-.register-button-header {
-    
-    padding: 14px 60px 15px 28px;
-    background-image: url("Matte-img/UI-Elements/Buttons/Button_green_small3.svg");
 }
 
 
@@ -347,21 +363,6 @@ h1 {
     color: var(--about-text-gray);
 }
 
-
-.regiser-button-about {
-    background-image: url(Matte-img/UI-Elements/Buttons/Button_green_small.svg);
-
-    display: flex;
-    align-items: center;
-
-    width: 336px;
-    height: 54px;
-
-    box-sizing: border-box;
-    padding-left: 100px;
-}
-
-
 .tools-container {
     margin-top: -40px;
 }
@@ -444,7 +445,7 @@ h1 {
 }
 
 
-/* таблица */
+/* table */
 
 
 .pricing-table {
@@ -515,29 +516,6 @@ h1 {
     --checkbox-white: var(--checkbox-black);
 }
 
-.button-join-get-started:hover,
-.button-pricing-join:hover,
-.regiser-button-about:hover,
-.register-button-header:hover,
-
-.button-join-get-started:focus,
-.button-pricing-join:focus,
-.regiser-button-about:focus,
-.register-button-header:focus {
-    opacity: 0.8;
-}
-
-.button-pricing-join {
-    width: 330px;
-    height: 52px;
-
-    background-image: url(Matte-img/UI-Elements/Buttons/Button_green_small2.svg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
 .get-started-container {
     z-index: 10;
 
@@ -588,22 +566,6 @@ h1 {
     margin-bottom: 30px;
     
 }
-
-.button-join-get-started {
-    background-image: url(Matte-img/UI-Elements/Buttons/Button_black.svg);
-    color: var(--white);
-
-    border: none;
-    border-radius: 40px;
-
-    width: 336px;
-    height: 52px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 
 .footer-container {
     margin-top: -40px;
