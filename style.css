@@ -162,6 +162,10 @@ body {
     overflow: hidden;
 }
 
+.black-nav {
+    display: none;
+}
+
 .burger {
     box-sizing: border-box;
     width: 44px;
@@ -399,8 +403,11 @@ h1 {
     margin: 0;
 }
 
-.tools-profession p {
+.text-font {
     font: 400 18px/24px "Gilfory", sans-serif;
+}
+
+.tools-profession p {
     margin: 0;
 }
 
@@ -626,7 +633,6 @@ h1 {
 }
 
 .copyrights span {
-    font: 400 18px/24px "Gilfory", sans-serif;
     color: #fff;
 
     text-align: center;
@@ -653,8 +659,6 @@ h1 {
 }
 
 .footer-duplicate-links a {
-    font: 400 18px/24px "Gilfory", sans-serif;
     margin-bottom: 14px;
-
 }
 
