@@ -1,3 +1,6 @@
+.flex-desktop {
+    display: flex;
+}
 
 .nav-menu img {
     display: none;
@@ -92,18 +95,18 @@
     filter: brightness(0);
 }
 
-.course-1 > h2 {
+.course > h2 {
     font-size: 40px;
 
     margin: 0 0 28px 64px;    
 }
 
-.course-2 {
+.course-content {
     margin: 0 24px;
     padding: 0;
 }
 
-.course-2 p {
+.course-content p {
     margin: 50px 20px 90px 0;
     
 }
@@ -116,24 +119,12 @@
     width: 50%;
 }
 
-
-.course-2-information-container {
-    display: flex;
-
-}
-
-.course-2-information-container-left-side {
+.course-content-left-side {
     width: 50%;
+    min-width: 410px;
 
     margin: 75px 0 40px 28px;
-}
-
-
-.course-2-information-container > div {
-    display: flex;
-    flex-direction: column;
-
-
+    padding-right: 20px;
 }
 
 .workload-container {
@@ -142,22 +133,32 @@
 
 .workload {
     flex-direction: column;
+    justify-content: center;
     width: 33.3%;
+    height: 260px;
 
     border-top: none;
-
     border-right: 1px solid #000;
 
-    margin-right: 34px;
+    padding: 0 20px;
+}
+
+.workload-number + span {
+    white-space: nowrap;
 }
 
 .workload > div {
-    align-self: flex-start;
+    margin: 40px 0 0;
 }
 
-.workload-container :last-of-type {
-    border-right: none;
+.workload-container .workload:last-of-type {
+    border: none;
 }
+
+.workload-container .workload:first-of-type {
+    padding-left: 0;
+}
+
 
 .workload img {
     width: 86px;
@@ -179,6 +180,24 @@
     margin-bottom: 66px;
 }
 
+
+.tools-content {
+    flex-direction: row;
+}
+
+#front-end {
+    border-top-right-radius: 40px;
+
+}
+
+#researches {
+    border-bottom-left-radius: 0;
+    border-left: 1px #000 solid;
+}
+
+.analytics {
+    border-right: 1px #000 solid;
+}
 
 .elem-1-mobile {    
     display: none;

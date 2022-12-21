@@ -171,6 +171,10 @@
     width: 100%;
 }
 
+.flex {
+    display: flex;
+}
+
 body {
     margin: 0;
 
@@ -230,7 +234,7 @@ h1 {
     display: none;
 }
 
-.course-1 {
+.course {
     display: flex;
     flex-direction: column;
     
@@ -240,11 +244,11 @@ h1 {
     padding-bottom: 40px;
 }
 
-.vector {
+.align-self-center {
     align-self: center;
 }
 
-.course-1 > h2 {
+.course > h2 {
     color: var(--white);
     font: 400 32px/40px 'PP Rader', sans-serif;
     text-transform: uppercase;
@@ -252,7 +256,7 @@ h1 {
     margin: 0 12px 28px;
 }
 
-.course-2 {
+.course-content {
     display: flex;
     flex-direction: column;
 
@@ -263,32 +267,29 @@ h1 {
     margin: 0 12px;
 }
 
-.course-2 p {
-    font: 500 19px/32px 'Gilfory', sans-serif;
-    
+.course-content p {
+    line-height: 32px;    
     margin: 20px 0 52px;
 }
 
 .workload {
     display: flex;
-
     border-top: 1px solid #000;
 }
 
-.workload > div {
-    align-self: center;
+.workload img {
+    margin-right: 14px;
+}
 
-    padding-top: 32px;
-    margin-bottom: 24px;
+.workload > div {
+    margin: 32px 0 24px;
 }
 
 .workload-number {
     font: bold 52px/32px 'Gilfory', sans-serif;
     padding-bottom: 16px;
-}
 
-.workload-description {
-    font: 400 19px/32px 'Gilfory', sans-serif;
+    white-space: nowrap;
 }
 
 .program {
@@ -387,7 +388,7 @@ h1 {
     margin-bottom: 40px;
 }
 
-.tools-profession {
+.tools-content {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -398,7 +399,7 @@ h1 {
     margin-top: -40px;
 }
 
-.tools-profession h4 {
+.tools-content h4 {
     font: 400 28px/41.5px 'PP Rader', sans-serif;
     letter-spacing: -0.4px;
     margin: 0;
@@ -408,11 +409,11 @@ h1 {
     font: 400 18px/24px "Gilfory", sans-serif;
 }
 
-.tools-profession p {
+.tools-content p {
     margin: 0;
 }
 
-.tools-profession div > div {
+.tools-content div > div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -623,4 +624,3 @@ h1 {
 .footer-duplicate-links a {
     margin-bottom: 14px;
 }
-

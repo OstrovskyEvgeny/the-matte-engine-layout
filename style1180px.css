@@ -21,27 +21,27 @@
     float: left;
 }
 
-.tools-profession {
+.tools-content {
     display: block;
     border: none;
 
     margin: 0;
 }
 
-.tools-profession-desktop-top {
+.tools-content-desktop-top {
     display: flex;
     justify-content: flex-end;
 }
 
 
-.tools-profession-desktop-bottom {
+.tools-content-desktop-bottom {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
 
 }
 
-.tools-profession div > div {
+.tools-content div > div {
     flex: 0 0 300px;
 
     border: 1px solid #000;
